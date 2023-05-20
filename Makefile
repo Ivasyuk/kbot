@@ -14,3 +14,6 @@ build: format
 
 clean:
 	rm -rf kbot
+	
+get:
+	go get
