@@ -1,0 +1,3 @@
+format:
+	gofmt -s -w ./
+
