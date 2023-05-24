@@ -1,8 +1,11 @@
 FROM quay.io/projectquay/golang:1.20 as builder
 
+ARG ARCH
+ARG OS 
+
 WORKDIR /go/src/app
 COPY . .
-RUN make windows ARCH=amd64
+RUN make ${OS} ARCH=${ARCH}
 
 
 FROM alpine
